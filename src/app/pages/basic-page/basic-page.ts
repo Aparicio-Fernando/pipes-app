@@ -11,4 +11,5 @@ export default class BasicPage {
   nameLower = signal('fernando')
   nameUpper = signal('FERNANDO')
   fullName = signal('feRnaNdo ApAriCiO')
+
 }
