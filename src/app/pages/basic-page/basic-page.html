@@ -12,8 +12,8 @@
 
   <div class="stat">
     <div class="stat-title">Uppercase Pipe</div>
-    <div class="stat-value text-secondary">{{nameLower() | lowercase}}</div>
-    <div class="stat-desc text-secondary">{{nameLower()}}</div>
+    <div class="stat-value">{{nameLower() | uppercase}}</div>
+    <div class="stat-desc">{{nameLower()}}</div>
   </div>
 
   <div class="stat">
@@ -79,10 +79,10 @@
 
 <div class="flex flex-row gap-2">
   <h1 class="text-2xl font-bold">Locale Actual
-    <span class="badge badge-secondary">ES</span>
+    <span class="badge badge-secondary">{{currentLocale()}}</span>
   </h1>
 
-  <button class="btn btn-primary">Changer pour le français </button>
-  <button class="btn btn-primary">Change to English</button>
-  <button class="btn btn-primary">Cambiar a español</button>
+  <button class="btn btn-primary" (click)="changeLocale('fr')">Changer pour le français </button>
+  <button class="btn btn-primary" (click)="changeLocale('en')">Change to English</button>
+  <button class="btn btn-primary" (click)="changeLocale('es')">Cambiar a español</button>
 </div>
