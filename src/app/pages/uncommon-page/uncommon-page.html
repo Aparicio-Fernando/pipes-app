@@ -37,4 +37,12 @@
     <b>Slice: 0:-3</b>
     <p class="text-secondary">{{clients() | slice:0:-3}}</p>
   </app-card>
+
+  <app-card title="JsonPipe">
+    <pre class="text-secondary">{{clients() | json}}</pre>
+    <pre class="text-secondary">{{client() | json}}</pre>
+    <p class="text-secondary">{{clients().join(", ") | json | uppercase}}</p>
+  </app-card>
+
+
 </section>
